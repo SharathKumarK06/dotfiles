@@ -1,0 +1,4 @@
+#.Xresources|symlink|
+.vim|symlink|
+#bin|symlink|.local
+settings.ini|symlink|.config/gtk-3.0

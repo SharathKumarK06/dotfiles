@@ -1,0 +1,38 @@
+" set theme
+set background=dark
+
+
+if !has('gui_running') && &term =~ '^\%(screen\|tmux\|st\)'
+  " Better mouse support, see  :help 'ttymouse'
+  set ttymouse=sgr
+
+  " Enable true colors, see  :help xterm-true-color
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  " see also https://sunaku.github.io/vim-256color-bce.html
+  set t_ut=
+
+  " set color of terminal
+  set t_Co=256
+endif
+
+set termguicolors
+
+" set cursor shape as pipe(|) when insert mode and block when normal mode
+" t_SI - start insert mode (bar cursor shape)
+" t_SR - start replace mode (underline cursor shape)
+" t_EI - end insert or replace mode (block cursor shape)
+let &t_SI = "\e[6 q"
+let &t_SR = "\e[4 q"
+let &t_EI = "\e[2 q"
+
+" set guioptions
+set guioptions=
+set guioptions+=a
+set guioptions+=e
+set guioptions+=g
+set guioptions+=i
+set guioptions+=t

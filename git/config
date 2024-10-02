@@ -1,0 +1,25 @@
+[user]
+	email = sharathkumar.k00@gmail.com
+	name = Sharath Kumar K
+[init]
+	defaultBranch = master
+[core]
+	editor = vim
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab
+[color]
+	ui = true
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	dfs = diff --staged
+	logg = log --graph --decorate --oneline --abbrev-commit --all
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	stats = log -10 --dirstat=files,1,cumulative --ignore-blank-lines --abbrev-commit --oneline --graph --decorate
+[help]
+	autocorrect = 1
+[merge]
+	tool = vimdiff

@@ -1,0 +1,32 @@
+super + Escape
+    "$XDG_CONFIG_HOME"/sxhkd/functions
+
+XF86MonBrightness{Up,Down}
+    sb-backlight.sh {inc, dec} >/dev/null 2>&1 && \
+        kill -$(( 34 + 5 )) $(pidof dwmblocks)
+
+XF86Audio{Lower,Raise}Volume
+    sb-volume.sh {dec,inc} >/dev/null 2>&1 && \
+        kill -$(( 34 + 6 )) $(pidof dwmblocks)
+
+XF86AudioMute
+    sb-volume.sh mute >/dev/null 2>&1 && \
+        kill -$(( 34 + 6 )) $(pidof dwmblocks)
+
+XF86TouchpadToggle
+    touchpad_toggle.sh >/dev/null 2>&1
+
+super + o ; {e, w}
+    {gvim, qutebrowser} >/dev/null 2>&1
+
+{_, shift, alt} + Print
+    screenshot.sh {full, select, window} >/dev/null 2>&1
+
+super + shift + l
+    slock
+
+super + m
+    xmouseless
+
+super + shift + s
+     qrcode-gen "$(xclip -sel clip -o)"
