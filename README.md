@@ -1,3 +1,3 @@
 # My dotfiles repo
 
-`deploy.sh`, `MANIFEST`, and `MANIFEST.linux` files are from `https://github.com/rexim/dotfiles`
+Got the `deploy.sh`, script from `https://github.com/rexim/dotfiles`
