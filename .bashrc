@@ -9,7 +9,7 @@ export PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin"
 
 # add sub directories of ~/.local/bin
 if [ -d ~/.local/bin ]; then
-    for dir in $(find ~/.local/bin -type d 2> /dev/null); do
+    for dir in $(find -L ~/.local/bin -type d 2> /dev/null); do
         PATH="$dir:$PATH"
     done
 fi
@@ -40,8 +40,9 @@ export DOWNLOADS="$HOME/Downloads"
 export DOCUMENTS="HOME/Documents"
 export PICTURES="$HOME/Pictures"
 export PROJECTS="$HOME/Projects"
-export NOTES="$HOME/Documents/Notes"
-export TODO_FILE="$HOME/TODO.txt"
+export NOTES_DIR="$HOME/Documents/Notes"
+export TODO_FILE="$NOTES_DIR/TODO.txt"
+export BOOKMARK_FILE="$NOTES_DIR/Bookmarks.txt"
 
 # XDG base directories
 export XDG_CONFIG_HOME="$HOME/.config"

@@ -592,11 +592,14 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
 " turn off highlight of search
 nnoremap <Leader>\ :set hlsearch!<CR><C-l>
 
-"" move block of text above and below
+" move block of text above and below
 xnoremap - :m '<-2<CR>gv
 xnoremap + :m '>+1<CR>gv
 
 map <F5> :setlocal spell! spelllang=en<CR>
+
+" render html page in w3m
+nnoremap <Leader>ww :w !w3m -T text/html<CR>
 
 " ----- statusline -----
 set noruler

@@ -35,7 +35,8 @@ alias free='free -h' \
     e="$EDITOR" \
     v="$EDITOR"
 
-alias todo="vim $TODO_FILE"
+alias note="$EDITOR -n -c ':enew' $NOTES_DIR"
+alias todo="$EDITOR $TODO_FILE"
+alias bookmark="$EDITOR $BOOKMARK_FILE"
 
 # My aliases
-alias intern-proj="cd ~/Projects/Internship-Project/Learnbuds/Service-Connect-Internship-Project/"
