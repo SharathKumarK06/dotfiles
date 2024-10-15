@@ -37,6 +37,7 @@ alias free='free -h' \
 
 alias note="$EDITOR -n -c ':enew' $NOTES_DIR"
 alias todo="$EDITOR $TODO_FILE"
+alias todo-today="$EDITOR $TODO_TODAY_FILE"
 alias bookmark="$EDITOR $BOOKMARK_FILE"
 
-# My aliases
+alias whatsapp="gtk-launch WhatsApp"

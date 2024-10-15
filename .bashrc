@@ -42,6 +42,7 @@ export PICTURES="$HOME/Pictures"
 export PROJECTS="$HOME/Projects"
 export NOTES_DIR="$HOME/Documents/Notes"
 export TODO_FILE="$NOTES_DIR/TODO.txt"
+export TODO_TODAY_FILE="$HOME/TODO_Today.txt"
 export BOOKMARK_FILE="$NOTES_DIR/Bookmarks.txt"
 
 # XDG base directories
@@ -56,7 +57,7 @@ export XINITRC="$HOME/.xinitrc"
 export XRESOURCES="$HOME/.Xresources"
 
 # wallpaper image
-export WALLPAPER_IMAGE="$PICTURES/Wallpapers/img1.wallspic.com-half_dome-glacier_point-yosemite_valley-mountain-tunnel_view-3840x2400.jpg"
+export WALLPAPER_IMAGE="/home/sharath/Pictures/Wallpapers/bliss.jpg"
 
 # to remove warning from gvim gtk
 export NO_AT_BRIDGE=1
@@ -131,6 +132,7 @@ export CLASSPATH=".:$JAVA_HOME/lib"
 export JAVA_TOOL_OPTIONS='-Dfile.encoding="UTF-8"'
 # fix for Java applications in dwm
 export _JAVA_AWT_WM_NONREPARENTING=1
+export AWT_TOOLKIT=MToolkit
 
 # stardict sdcv dir
 export STARDICT_DATA_DIR="$XDG_DATA_HOME/stardict"
